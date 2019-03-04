@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 var prefix = "W";
-const adminprefix = "!";
-const developers = ["399226862506868742"]//Toxic Codes
+const adminprefix = "*";
+const developers = ["544103030954524672"]//Toxic Codes
 client.on('message', message => {//Toxic Codes
     var argresult = message.content.split(` `).slice(1).join(' ');//Toxic Codes
       if (!developers.includes(message.author.id)) return;
@@ -23,7 +23,7 @@ client.on('message', message => {//Toxic Codes
       message.channel.send(`**✅   ${argresult}**`)//Toxic Codes
   } else
   if (message.content.startsWith(adminprefix + 'sets')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/zero");
+    client.user.setGame(argresult, "https://www.twitch.tv/AlZa3EeM");
       message.channel.send(`**✅**`)//Toxic Codes
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
